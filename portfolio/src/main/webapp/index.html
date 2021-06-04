@@ -2,28 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <title>My Portfolio</title>
   </head>
   <body>
-    <div id="content">
-      <h1>Christian's Portfolio</h1>
-      <p>Hello, my name is Christian and this is my portfolio.</p>
-      <img src="images/Zen-5.jpg" alt="Image of a zen garden" class="img"/>
-      <p>
-        I enjoy working on new projects and learning as much as I can. My latest 
-        project is working on this very portfolio, using Java applets and 
-        various Google cloud services to host and build the site. My free time is
-        usually spent around video games, playing them, reading about various 
-        industry and behind-the-scenes "stuff", or thinking about how the design 
-        of their mechanisms and overall gameplay fit, or don't fit, together. I 
-        also like to listen to a bunch of tech and science podcasts.
-      </p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomQuote()">Get a Quote!</button>
-      <div id="quote-container"></div>
+    <!-- Masthead -->
+    <div class="masthead-container valign-wrapper">
+      <div class="row">
+        <div class="col s8 center-align offset-s2">
+          <h1>Software Engineer and Cybersecurity Student</h1>
+          <p>I build solutions and then try to break them.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="z-depth-2">
+      <p>Future links to other pages will go here.</p>
+    </nav>
+    
+    <!-- Biography -->
+    <div class="bio-container">
+      <img src="images/Zen-5.jpg" alt="Image of a Zen Garden." 
+          class="bio-image responsive-img">
+      <div class="container">
+        <div class="row">
+          <div class="col s8">
+            <h2>Hello, my name is Christian Liguori.</h2>
+            <p>
+              I enjoy working on new projects and learning as much as I can. My 
+              latest project is working on this very portfolio, using Java 
+              applets and various Google cloud services to host and build the 
+              site. My free time is usually spent around video games, playing 
+              them, reading about various industry and behind-the-scenes 
+              "stuff", or thinking about how the design of their mechanisms and 
+              overall gameplay fits, or doesn't fit, together. I also like to 
+              listen to a bunch of tech and science podcasts.
+            </p>
+            <p>
+              Click <a href="/hello">here</a> to see content created by 
+              server code.
+            </p>
+            <p>Click here to get a random message:</p>
+            <button onclick="addRandomQuote()">Get a Quote!</button>
+            <div id="quote-container"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
