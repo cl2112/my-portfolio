@@ -26,10 +26,10 @@ const addRandomQuote = () => {
       "I'm allergic to sushi. Everytime I eat more than 80 pieces I throw up.",
   ];
 
-    // Pick a random quote.
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+  // Pick a random quote.
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
-    // Add it to the page.
-    const quoteContainer = document.getElementById("quote-container");
-    quoteContainer.innerText = quote;
+  // Add it to the page.
+  const quoteContainer = document.getElementById("quote-container");
+  quoteContainer.innerText = quote;
 }
