@@ -1,13 +1,26 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+body {
+  background: #151515 url(./images/black-linen.png);
+  color: #fafafa;
 }
 
-#greeting-container {
-  margin-top: 20px;
+nav {
+  background: #b4a5a5;
+  position: sticky;
+  top: 0;
 }
 
-.img {
-  width: 100%;
+/* Masthead */
+
+#masthead-container {
+  height: calc(95vh - 93px); /* The 93px is the size of the nav bar */
+}
+
+#masthead-container h1 {
+  border-left: solid #3c415c .5em;
+}
+
+#masthead-container p {
+  border-right: solid #301b3f 1em;
+  display: inline;
+  padding: 0 .5em;
 }
