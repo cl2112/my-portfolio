@@ -11,6 +11,7 @@ nav {
 
 /* Masthead */
 
+/* TODO: Try using margin/padding instead of hardcoded height */
 #masthead-container {
   height: calc(95vh - 93px); /* The 93px is the size of the nav bar */
 }
