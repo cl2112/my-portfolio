@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="fetch.js" defer></script>
     <title>My Portfolio</title>
   </head>
   <body>
@@ -54,6 +55,8 @@
             <!-- TODO: Separate JS and HTML concerns. -->
             <button onclick="addRandomQuote()">Get a Quote!</button>
             <div id="quote-container"></div>
+            <button id="get-hello-button">Get a hello from the server!</button>
+            <p id="get-hello-container"></p>
           </div>
         </div>
       </div>
