@@ -25,3 +25,9 @@ nav {
   display: inline;
   padding: 0 .5em;
 }
+
+/* Get Hello */
+
+#get-hello-button {
+  margin: 1em 0;
+}
