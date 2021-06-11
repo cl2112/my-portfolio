@@ -11,5 +11,5 @@ async function showHello() {
   const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
   const getHelloContainer = document.getElementById('get-hello-container');
-  getHelloContainer.innerHTML = quote;
+  getHelloContainer.innerText = quote;
 }
