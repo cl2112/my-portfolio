@@ -2,11 +2,14 @@
 const getHelloButton = document.getElementById('get-hello-button');
 document.addEventListener('click', showHello);
 
-/** Fetches a hello from the server and adds it to the page. */ 
+/** Fetches a list of quotes from the server and adds one to the page. */ 
 async function showHello() {
   const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
+  const quotes = await responseFromServer.json();
+
+  // Pick a random quote.
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
   const getHelloContainer = document.getElementById('get-hello-container');
-  getHelloContainer.innerHTML = textFromResponse;
+  getHelloContainer.innerHTML = quote;
 }
