@@ -31,3 +31,10 @@ nav {
 #get-hello-button {
   margin: 1em 0;
 }
+
+/* Contact Form */
+#contact-form-container button,
+#contact-form-container input {
+  margin: 1em 0;
+  color: inherit;
+}
