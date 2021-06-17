@@ -38,3 +38,6 @@ nav {
   margin: 1em 0;
   color: inherit;
 }
+#contact-form-container label {
+  display: block;
+}
