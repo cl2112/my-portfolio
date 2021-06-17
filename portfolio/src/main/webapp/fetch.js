@@ -1,6 +1,6 @@
 /** Adds an onclick event listener to the get hello button. */
 const getHelloButton = document.getElementById('get-hello-button');
-document.addEventListener('click', showHello);
+getHelloButton.addEventListener('click', showHello);
 
 /** Fetches a list of quotes from the server and adds one to the page. */ 
 async function showHello() {

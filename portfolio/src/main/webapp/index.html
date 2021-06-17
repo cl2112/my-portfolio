@@ -61,5 +61,33 @@
         </div>
       </div>
     </div>
+
+    <!-- Contact Form -->
+    <div id="contact-form-container">
+      <div class="container">
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <h3>Get in touch!</h3>
+            <form 
+              action="/posts" 
+              method="POST">
+              <input 
+                type="text"
+                name="sender-name">
+              <label for="sender-name">What's your name?</label>
+              <input 
+                type="text"
+                name="sender-organization">
+              <label for="sender-organization">Where do you work?</label>
+              <input 
+                type="text"
+                name="sender-message">
+              <label for="sender-message">What's on your mind?</label>
+              <button class="waves-effect waves-light btn" type="submit">Submit</button>    
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
