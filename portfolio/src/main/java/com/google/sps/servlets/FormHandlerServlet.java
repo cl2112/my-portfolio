@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/form-handler")
+@WebServlet("/posts")
 public class FormHandlerServlet extends HttpServlet {
 
   @Override
