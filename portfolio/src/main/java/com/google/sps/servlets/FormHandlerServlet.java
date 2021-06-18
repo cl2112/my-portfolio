@@ -43,8 +43,6 @@ public class FormHandlerServlet extends HttpServlet {
             .build();
     datastore.put(postEntity);
 
-    System.out.println(postEntity);
-
     // Create a string that describes the values received.
     String dataString = "You submitted: \nName: " + senderName + ", \nOrganization: " + 
       senderOrganization + ", \nMessage: " + senderMessage;
