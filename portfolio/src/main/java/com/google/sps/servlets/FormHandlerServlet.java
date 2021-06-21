@@ -18,17 +18,21 @@ public class FormHandlerServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    final String NAME_FIELD_ID = "sender-name";
+    final String ORGANIZATION_FIELD_ID = "sender-organization";
+    final String MESSAGE_FIELD_ID = "sender-message";
+
     // Get the values entered in the form. Sanitize user input to remove HTML tags and JavaScript.
     String senderName = Jsoup.clean(
-      request.getParameter("sender-name"), 
+      request.getParameter(NAME_FIELD_ID), 
       Whitelist.none()
     );
     String senderOrganization = Jsoup.clean(
-      request.getParameter("sender-organization"), 
+      request.getParameter(ORGANIZATION_FIELD_ID), 
       Whitelist.none()
     );
     String senderMessage = Jsoup.clean(
-      request.getParameter("sender-message"), 
+      request.getParameter(MESSAGE_FIELD_ID), 
       Whitelist.none()
     );
 
@@ -37,9 +41,9 @@ public class FormHandlerServlet extends HttpServlet {
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Post");
     FullEntity postEntity =
         Entity.newBuilder(keyFactory.newKey())
-            .set("sender-name", senderName)
-            .set("sender-organization", senderOrganization)
-            .set("sender-message", senderMessage)
+            .set(NAME_FIELD_ID, senderName)
+            .set(ORGANIZATION_FIELD_ID, senderOrganization)
+            .set(MESSAGE_FIELD_ID, senderMessage)
             .build();
     datastore.put(postEntity);
 
