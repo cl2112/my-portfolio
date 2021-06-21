@@ -2,4 +2,6 @@
 .idea
 .project
 .settings/
+.theia/
+.vscode/
 target/
