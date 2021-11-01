@@ -10,6 +10,7 @@
     <title>My Portfolio</title>
   </head>
   <body>
+
     <!-- Masthead -->
     <div 
       class="valign-wrapper" 
@@ -23,20 +24,32 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="z-depth-2">
-      <p>Future links to other pages will go here.</p>
+    <nav>
+      <div class="nav-wrapper container">
+        <a 
+          href="#" 
+          class="brand-logo">
+          Christian Liguori
+        </a>
+        <ul 
+          id="nav-mobile" 
+          class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="https://github.com/cl2112">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/christian-liguori">LinkedIn</a></li>
+        </ul>
+      </div>
     </nav>
     
     <!-- Biography -->
     <div id="bio-container">
-      <img 
-        src="images/Zen-5.jpg" 
-        alt="Image of a Zen Garden." 
-        class="bio-image responsive-img">
+      <div class="background-img-container"></div>
+      <a name="about"></a>
       <div class="container">
         <div class="row">
-          <div class="col s8">
-            <h2>Hello, my name is Christian Liguori.</h2>
+          <div class="col s10 offset-s1">
+            <h3>Hello, my name is Christian Liguori.</h3>
             <p>
               I enjoy working on new projects and learning as much as I can. My 
               latest project is working on this very portfolio, using Java 
@@ -57,6 +70,83 @@
             <div id="quote-container"></div>
             <button id="get-hello-button">Get a hello from the server!</button>
             <p id="get-hello-container"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Showcase -->
+    <div id="project-showcase-container">
+      <a name="projects"></a>
+      <div class="container">
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <h3>Here are some of my previous projects.</h3>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+              <a href="https://github.com/cl2112/CPS_3320_Project_3">
+                <h4>Get Involved NJ App</h4>
+              </a>
+              <h5><i>Python</i></h5>
+              <div class="row">
+                <div class="col s6">
+                  <p>
+                    This is the final project I made for my python class at Kean
+                    University. The goal was to create an app that aggregated all
+                    of the important information from local governments so that
+                    it was easy for people to get involved. I started by 
+                    scraping the local government websites and displaying it in
+                    a GUI. While working on the project I found out that the 
+                    information I was expecting to find was not available or 
+                    was hard to find and parse. If I were to do it over again, I
+                    would focus on creating a guide that explained more about how
+                    local governments work so that the work would reach more 
+                    people. Still, I am happy with the progress I made and 
+                    learning about front end with python, local governments and
+                    web scraping.
+                    <a href="https://github.com/cl2112/Python_Projects_Completed">
+                      <p>Here are the other projects I finished for this class.</p>
+                    </a>
+                  </p>
+                </div>
+                <div class="col s6">
+                  <img 
+                    class="responsive-img" 
+                    src="images/get_involved_screenshot.png"
+                    alt="Screenshot of the Get Involved NJ app interface">
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+              <a href="https://street-fighter-2-hangman.herokuapp.com/">
+                <h4>Street Fighter 2 Hangman</h4>
+              </a>
+              <h5><i>Javascript</i></h5>
+              <div class="row">
+                <div class="col s6">
+                  <p>
+                    This is one of the earlier projects I completed in the 
+                    web development bootcamp I took at Rutgers University. I 
+                    have always been a fan of fighting games and I thought that
+                    it would make a great theme for a hangman game. I spent a lot
+                    of time on this project and it was an early marker for me and
+                    my path toward a career in computer science.
+                    <a href="https://github.com/cl2112/hangman-game">
+                      <p>Here is the link to the repo.</p>
+                    </a>
+                  </p>
+                </div>
+                <div class="col s6">
+                  <img 
+                    class="responsive-img" 
+                    src="images/hangman_game_screenshot.png"
+                    alt="Screenshot of the street fighter 2 hangman game.">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
